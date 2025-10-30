@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Website</title>
+</head>
+<body>
+    <style>
+  
+    </style>
+
+   
+
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About</h2>
+            <div class="card">
+                <p class="muted">I am a passionate developer with experience building web applications, collaborating on cross-functional teams, and shipping polished products. I enjoy learning new technologies and improving user experiences through thoughtful design and performant code.</p>
+                <ul class="muted" style="margin:12px 0 0;padding-left:18px">
+                    <li>Location: Your City, Country</li>
+                    <li>Available for freelance and full-time work</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Selected Projects</h2>
+            <div class="grid">
+                <article class="card">
+                    <img alt="Project screenshot" src="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='300'%3E%3Crect width='100%25' height='100%25' fill='%230b1220'/%3E%3Ctext x='50%25' y='50%25' fill='%23e6eef8' font-size='20' text-anchor='middle' dominant-baseline='central'%3EProject 1 Screenshot%3C/text%3E%3C/svg%3E">
+                    <h3>Project 1</h3>
+                    <p class="muted">A short description: what it does, tech used, and impact.</p>
+                    <div style="display:flex;gap:8px;margin-top:10px">
+                        <a class="muted" href="#" aria-label="Live demo">Live</a>
+                        <a class="muted" href="#" aria-label="Source code on GitHub">Code</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img alt="Project screenshot" src="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='300'%3E%3Crect width='100%25' height='100%25' fill='%230b1220'/%3E%3Ctext x='50%25' y='50%25' fill='%23e6eef8' font-size='20' text-anchor='middle' dominant-baseline='central'%3EProject 2 Screenshot%3C/text%3E%3C/svg%3E">
+                    <h3>Project 2</h3>
+                    <p class="muted">Single-page app with API integration. Built with modern tooling.</p>
+                    <div style="display:flex;gap:8px;margin-top:10px">
+                        <a class="muted" href="#" aria-label="Live demo">Live</a>
+                        <a class="muted" href="#" aria-label="Source code on GitHub">Code</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img alt="Project screenshot" src="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='300'%3E%3Crect width='100%25' height='100%25' fill='%230b1220'/%3E%3Ctext x='50%25' y='50%25' fill='%23e6eef8' font-size='20' text-anchor='middle' dominant-baseline='central'%3EProject 3 Screenshot%3C/text%3E%3C/svg%3E">
+                    <h3>Project 3</h3>
+                    <p class="muted">Tooling, performance, and testing focus. Deployed with CI/CD.</p>
+                    <div style="display:flex;gap:8px;margin-top:10px">
+                        <a class="muted" href="#" aria-label="Live demo">Live</a>
+                        <a class="muted" href="#" aria-label="Source code on GitHub">Code</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <div class="card skills" role="list">
+                <span class="skill" role="listitem">HTML</span>
+                <span class="skill" role="listitem">CSS</span>
+                <span class="skill" role="listitem">JavaScript</span>
+                <span class="skill" role="listitem">React</span>
+                <span class="skill" role="listitem">Accessibility</span>
+                <span class="skill" role="listitem">Testing</span>
+            </div>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <div class="card" style="display:grid;gap:12px">
+                <p class="muted">Want to work together or ask a question? Fill out the form — I'll get back to you soon.</p>
+                <form id="contact-form" novalidate>
+                    <div class="row">
+                        <div style="flex:1">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" required placeholder="Your full name">
+                        </div>
+                        <div style="flex:1">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" required placeholder="you@example.com">
+                        </div>
+                    </div>
+
+                    <div style="margin-top:8px">
+                        <label for="subject">Subject</label>
+                        <input id="subject" name="subject" type="text" placeholder="Brief subject" required>
+                    </div>
+
+                    <div style="margin-top:8px">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Write your message here"></textarea>
+                    </div>
+
+                    <div style="display:flex;align-items:center;gap:8px;margin-top:8px">
+                        <input id="consent" type="checkbox" required>
+                        <label for="consent" class="muted">I agree to be contacted regarding this inquiry.</label>
+                    </div>
+
+                    <div style="display:flex;gap:10px;align-items:center;margin-top:12px">
+                        <button type="submit" class="btn">Send Message</button>
+                        <div id="form-status" aria-live="polite" class="muted"></div>
+                    </div>
+                </form>
+                <p class="muted" style="margin:0;font-size:0.9rem">Or email directly: <a href="mailto:you@example.com" class="muted">you@example.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+                <div class="muted">© <span id="year"></span> MyPortfolio. All rights reserved.</div>
+                <div style="display:flex;gap:10px">
+                    <a class="muted" href="#" aria-label="Twitter">Twitter</a>
+                    <a class="muted" href="#" aria-label="GitHub">GitHub</a>
+                    <a class="muted" href="#" aria-label="LinkedIn">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"> </script>
+</body></article>
+</html>
